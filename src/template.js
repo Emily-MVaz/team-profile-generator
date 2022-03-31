@@ -24,89 +24,10 @@ const generateTeam = function (employees) {
     <header class="bg-danger text-center">
         <h1 class="p-5 text-white">My Team</h1>
     </header>
+    
     <div class="container row justify-content-center">
-        <!-- Manager Card -->
-        <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header bg-primary">
-            <h3>Name</h3>
-            <h4>Manager</h4><i class="material-icons">content_paste</i>
-            </div>
-
-            <div class="card-body">
-            <p class="id">ID: 1</p>
-            <p class="email">Email: <a href="#">email</a></p>
-            <p class="office">Office Number: 0</p>
-            </div>
-
-        </div>
-        </div>
-
-        <!-- Engineer Card 1-->
-        <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header bg-primary">
-            <h3>Name</h3>
-            <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
-            </div>
-
-            <div class="card-body">
-            <p class="id">ID: 2</p>
-            <p class="email">Email: <a href="#">email</a></p>
-            <p class="github">Github: <a href="#">github</a></p>
-            </div>
-
-        </div>
-        </div>
-
-        <!-- Engineer Card 2-->
-        <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header bg-primary">
-            <h3>Name</h3>
-            <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
-            </div>
-
-            <div class="card-body">
-            <p class="id">ID: 3</p>
-            <p class="email">Email:<a href="#">email</a></p>
-            <p class="github">Github: <a href="#">github</a></p>
-            </div>
-        </div>
-        </div>
-
-        <!-- Engineer Card 3 -->
-        <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header bg-primary">
-            <h3>Name</h3>
-            <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
-            </div>
-
-            <div class="card-body">
-            <p class="id">ID: 4</p>
-            <p class="email">Email: <a href="#">email</a></p>
-            <p class="github">Github: <a href="#">github</a></p>
-            </div>
-
-        </div>
-        </div>
-
-        <!-- Intern Card -->
-        <div class="col-4 mt-4">
-        <div class="card h-100">
-            <div class="card-header bg-primary">
-            <h3>Name</h3>
-            <h4>Intern</h4><i class="material-icons">assignment_ind</i>
-            </div>
-
-            <div class="card-body">
-            <p class="id">ID: 5</p>
-            <p class="email">Email:<a href="#">email</a></p>
-            <p class="school">School: </p>
-            </div>
-        </div>
-        </div>
+        <!-- Employee Cards -->
+        <!-- Employee Cards tag -->
     </div>
 
     </body>
