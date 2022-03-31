@@ -1,11 +1,72 @@
+// TODO: add template literals into emplyee card info
+
 // Generate Manager info Card
+const generateManager = manager => {
+    return `
+    <div class="col-4 mt-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h3>Name</h3>
+            <h4>Manager</h4>
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+
+          <div class="card-body">
+            <p class="id">ID: 1</p>
+            <p class="email">Email: <a href="#">email</a></p>
+            <p class="office">Office Number: 0</p>
+          </div>
+        </div>
+      </div>`
+};
 
 // Generate Engineer info Card
+const generateEngineer = engineer => {
+    return`
+    <div class="col-4 mt-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h3>Name</h3>
+            <h4>Engineer</h4>
+            <i class="fa-solid fa-glasses"></i>
+          </div>
+
+          <div class="card-body">
+            <p class="id">ID: 2</p>
+            <p class="email">Email: <a href="#">email</a></p>
+            <p class="github">Github: <a href="#">github</a></p>
+          </div>
+        </div>
+      </div>`
+};
 
 // Generate Intern info Card
+const generateIntern = intern => {
+    return`
+    <div class="col-4 mt-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-white">
+            <h3>Name</h3>
+            <h4>Intern</h4>
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+
+          <div class="card-body">
+            <p class="id">ID: 5</p>
+            <p class="email">Email:<a href="#">email</a></p>
+            <p class="school">School:</p>
+          </div>
+        </div>
+      </div>`
+};
+
+
+// add cards to page
+
+
 
 // html page setup
-const generateTeam = function (employees) {
+const generateTeam = employees => {
     return `
     <!DOCTYPE html>
     <html lang="en">
