@@ -7,15 +7,15 @@ const generateTeam = (team) => {
         <div class="col-4 mt-4">
             <div class="card h-100">
             <div class="card-header bg-primary text-white">
-                <h3>Name</h3>
+                <h3>${manager.name}</h3>
                 <h4>Manager</h4>
                 <i class="fa-solid fa-mug-hot"></i>
             </div>
 
             <div class="card-body">
-                <p class="id">ID: 1</p>
-                <p class="email">Email: <a href="#">email</a></p>
-                <p class="office">Office Number: 0</p>
+                <p class="id">ID: ${manager.id}</p>
+                <p class="email">Email: <a href="${manager.email}">${manager.email}</a></p>
+                <p class="office">Office Number: ${manager.officeNumber}</p>
             </div>
             </div>
         </div>`;
@@ -27,15 +27,15 @@ const generateTeam = (team) => {
         <div class="col-4 mt-4">
             <div class="card h-100">
             <div class="card-header bg-primary text-white">
-                <h3>Name</h3>
+                <h3>${engineer.name}</h3>
                 <h4>Engineer</h4>
                 <i class="fa-solid fa-glasses"></i>
             </div>
 
             <div class="card-body">
-                <p class="id">ID: 2</p>
-                <p class="email">Email: <a href="#">email</a></p>
-                <p class="github">Github: <a href="#">github</a></p>
+                <p class="id">ID: ${engineer.id}</p>
+                <p class="email">Email: <a href="${engineer.email}">${engineer.email}</a></p>
+                <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
             </div>
             </div>
         </div>`;
@@ -47,15 +47,15 @@ const generateTeam = (team) => {
         <div class="col-4 mt-4">
             <div class="card h-100">
             <div class="card-header bg-primary text-white">
-                <h3>Name</h3>
+                <h3>${intern.name}</h3>
                 <h4>Intern</h4>
                 <i class="fa-solid fa-user-graduate"></i>
             </div>
 
             <div class="card-body">
-                <p class="id">ID: 5</p>
-                <p class="email">Email: <a href="#">email</a></p>
-                <p class="school">School: </p>
+                <p class="id">ID: ${intern.id}</p>
+                <p class="email">Email: <a href="${intern.email}">${intern.email}</a></p>
+                <p class="school">School: ${intern.school}</p>
             </div>
             </div>
         </div>`;
@@ -112,7 +112,7 @@ module.exports = (team) => {
     
     <div class="container row justify-content-center">
         <!-- Employee Cards -->
-        <!-- Employee Cards tag -->
+        ${generateTeam(team)}
     </div>
 
     </body>
