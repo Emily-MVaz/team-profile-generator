@@ -1,4 +1,3 @@
-// TODO: add template literals into emplyee card info
 
 const generateTeam = (team) => {
   // Generate Manager info Card
@@ -68,21 +67,23 @@ const generateTeam = (team) => {
   html.push(
     team
       .filter((employee) => employee.getRole() === "Manager")
-      .map((manager) => generateManager(manager))
+      .map( manager => generateManager(manager))
   );
 
   // add engineer info to html
   html.push(
     team
       .filter((employee) => employee.getRole() === "Engineer")
-      .map((manager = generateEngineer(engineer)))
+      .map(engineer => generateEngineer(engineer))
+      .join("")
   );
 
   // add intern info to html
   html.push(
     team
       .filter((employee) => employee.getRole() === "Intern")
-      .map((intern) => generateIntern(intern))
+      .map(intern => generateIntern(intern))
+      .join("")
   );
 
   // add all to html
@@ -92,35 +93,55 @@ const generateTeam = (team) => {
 // html page setup
 module.exports = (team) => {
   return `
-    <!DOCTYPE html>
-    <html lang="en">
-
+  <!DOCTYPE html>
+  <html lang="en">
     <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/homework/team-profile-generator/dist/stylesheet.css" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <script
+        src="https://kit.fontawesome.com/b95f853310.js"
+        crossorigin="anonymous"
+      ></script>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="/homework/team-profile-generator/dist/stylesheet.css"
+      />
     </head>
-
+  
     <body>
-    <header class="bg-danger text-center">
+      <header class="bg-danger text-center">
         <h1 class="p-5 text-white">My Team</h1>
-    </header>
-    
-    <div class="container row justify-content-center">
-        <!-- Employee Cards -->
-        ${generateTeam(team)}
-    </div>
-
+      </header>
+  
+      <div class="container row justify-content-center">
+      <!-- Employee Cards -->
+      ${generateTeam(team)}
+      </div>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    </html>`;
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </html>
+  `;
 };
 
-// export
-module.exports = generateTeam;
+
+
+
+
+
+
+
+
+
+

@@ -1,23 +1,34 @@
-// import engineer const
 const Engineer = require("../lib/Engineer");
 
-// engineer test  
-test("Engineer test", () => {
-    const engineer = new Engineer("James", "0000", "james1234@gmail.com");
-    
-    expect(engineer.github) .toEqual(expect.any(String));
-});
-
-// github test
 test("github test", () => {
-    const engineer = new Engineer("James", "0000", "james1234@gmail.com");
-
-    expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
+  const testGithub = "JamesGit";
+  const employeeInstance = new Engineer(
+    "James",
+    1234,
+    "james1234@gmail.com",
+    testGithub
+  );
+  expect(employeeInstance.github).toBe(testGithub);
 });
 
-// role test 
-test("role test", () => {
-    const engineer = new Engineer("James", "0000", "james1234@gmail.com");
+test("getGithub test", () => {
+  const testGithub = "JamesGit";
+  const employeeInstance = new Engineer(
+    "James",
+    1234,
+    "james1234@gmail.com",
+    testGithub
+  );
+  expect(employeeInstance.getGithub()).toBe(testGithub);
+});
 
-    expect(engineer.getRole()).toEqual("Engineer");
+test("Role test", () => {
+  const returnValue = "Engineer";
+  const employeeInstance = new Engineer(
+    "James",
+    1234,
+    "james1234@gmail.com",
+    "JamesGit"
+  );
+  expect(employeeInstance.getRole()).toBe(returnValue);
 });

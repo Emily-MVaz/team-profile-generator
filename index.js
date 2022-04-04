@@ -87,7 +87,7 @@ const addEmployee = () => {
     // choose intern or engineer
     {
       type:"list",
-      name: "job",
+      name: "role",
       message: "Please choose an employee to add to the team.",
       choices: ["Engineer", "Intern"],
     },
@@ -174,7 +174,7 @@ const addEmployee = () => {
   ])
   // combine
   .then(employeeInfo => {
-    let {name, id, email, job, github, school, confirmEmployee} = employeeInfo;
+    let {name, id, email, role, github, school, confirmEmployee} = employeeInfo;
     let employee;
 
     if (role === "Engineer") {
@@ -189,7 +189,7 @@ const addEmployee = () => {
     if (confirmEmployee) {
       return addEmployee(teamArray);
     } else {
-      return teamArray
+      return teamArray;
     }
   });
 };
