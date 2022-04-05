@@ -121,7 +121,7 @@ module.exports = (team) => {
         <h1 class="p-5 text-white">My Team</h1>
       </header>
   
-      <div class="container row justify-content-center">
+      <div class="container row justify-content-center mx-auto">
       <!-- Employee Cards -->
       ${generateTeam(team)}
       </div>
