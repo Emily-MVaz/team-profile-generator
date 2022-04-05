@@ -54,9 +54,12 @@ THEN I exit the application, and the HTML is generated
 ## Video
 
 Tests:
-https://user-images.githubusercontent.com/98716344/161658297-27371620-a02d-4ab6-934c-fe36ddf13704.mp4
+
+![team-profile-tests](https://user-images.githubusercontent.com/98716344/161658995-73a1b0eb-d6ad-455a-9826-58f29be7c743.gif)
+
 
 Command-line:
+
 ![team-profile-gif](https://user-images.githubusercontent.com/98716344/161658811-a9118eca-1250-4aea-9b2c-810bbff8efe9.gif)
 
 
